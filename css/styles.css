@@ -172,11 +172,21 @@ body {
 
 .addres-link {
     display: block;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 12px;
+
+/* line-height: 14px; */ 
+line-height: 1.16667;
+letter-spacing: 0.04em;
+color: #434455;
   }
 }
 
@@ -185,6 +195,7 @@ body {
     .header-logo {
         margin-right: 76px;
       }
+
     .address-list {
        flex-direction: row;
         align-items: center;
@@ -192,7 +203,6 @@ body {
    }
 
    .addres-link {
-    padding: 24px 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -288,17 +298,13 @@ gap: 40px;
         color: #404bbf;
       }
       
-      .addres-link:hover {
+      .address-link:hover {
         color: #404bbf;
       }
-      .addres-link:focus {
+      .address-link:focus {
         color: #404bbf;
       }
 
-      .address-list {
-        margin-top: 168px;
-      }
-  
     .address.is-open {
         display: block;
         font-style: normal;
@@ -339,8 +345,8 @@ gap: 40px;
         fill: #f4f4fd }
       
       
-        .people-social-media-link:hover,
-        .people-social-media-link:focus {
+        .header-social-media-link:hover,
+        .header-social-media-link:focus {
         background-color: #404bbf;;
       }
       
@@ -366,6 +372,22 @@ gap: 40px;
       
 
 @media screen and (min-width: 768px) {
+
+    .header-page {
+        box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+        background: #fff;
+        border-bottom: 1px solid #e7e9fc;
+      }
+      .header-container {
+        display: flex;
+        align-items: center;
+      }
+      
+      .header-nav {
+        display: flex;
+        align-items: center;
+      }
+
 .mobile-menu {
     display: none;
 }
@@ -427,7 +449,7 @@ gap: 40px;
   gap: 12px;
 }
 
-.addres-link {
+.address-link {
   display: block;
   font-weight: 400;
   font-size: 12px;
@@ -451,6 +473,140 @@ gap: 40px;
   color: #404bbf;
 }
 
+}
 
+@media screen and (min-width: 1158px) {
+
+.header-container {
+    padding-left: 156px;
+    padding-right: 156px;
+}
+
+.address-list {
+  display: flex;
+  align-items: center;
+}
+
+.address {
+  font-style: normal;
+  margin-left: auto;
+}
+
+.address-list {
+flex-direction: row;
+  gap: 40px;
+}
+
+.addres-link {
+  display: block;
+  padding: 24px 0;
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+/* hero */
+
+.hero {
+
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people.jpg);
+    width: 100%;
+    height: 432px;
+    padding-top: 72px;
+    padding-left: 52px;
+    padding-right: 52px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 72px;
+  
+   
+}
+
+.button {
+display: flex;
+margin-left: auto;
+margin-right: auto;
+align-items: center;
+justify-content: center;
+border: none;
+min-width: 169px;
+border-radius: 4px;
+height: 56px;
+padding: 16px 32px;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+background: #4d5ae5;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #fff;
+margin-bottom: 72px;
+cursor: pointer;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover {
+    background-color: #404bbf;
+  }
+  .button:focus {
+    background-color: #404bbf;
+  }
+
+@media screen and (min-width: 768px) {
+
+    .hero {
+        height: 436px;
+        padding-top: 112px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 36px;  
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 496px;
+    }
+    
+    .button {
+    margin-bottom: 112px;
+    }
+}
+
+@media screen and (min-width: 1128px) {
+
+.hero {
+    height: 600px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1440px;
+    padding: 188px 0;
+      }
+
+.hero-title {
+   margin-bottom: 48px;  
+}
 
 }
+
