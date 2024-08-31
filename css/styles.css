@@ -756,8 +756,8 @@ width: calc((100% - 24px) / 2)
 
 
     .container.people-container {
-      margin-left: 0;
-      margin-right: 0;
+      margin-left: auto;
+      margin-right: auto;
         padding-left: 28px;
         padding-right: 28px;
     }
@@ -1262,7 +1262,8 @@ gap: 72px 24px;
     }
 
     .footer {
-      padding: 100px 0;
+      padding-top: 100px;
+      padding-bottom: 100px;
     }
     
     .footer-general {
